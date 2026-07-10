@@ -234,14 +234,13 @@
 }
 
 
-.outter-btn,
-.common-btn{
+.outter-btn{
     width: 100%;
     padding: 15px;
      background-color: white;
     color: blue;
     border: 1px solid blue;
-    padding: 16px 38px;
+    
     border-radius: 8px;
     font-weight: bold;
     cursor: pointer;
@@ -250,9 +249,22 @@
 
 }
 
+.pro .common-btn{
+    background-color: blue;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+}
 .pricing-btn{
     margin-top: auto;
 }
 
 
 /* pricing section end  */
+
+
