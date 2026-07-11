@@ -299,7 +299,7 @@
 
 .schedule {
     padding: 96px 24px;
-    background: #F9F9FB;
+    background: #e9e9ee;
 }
 
 .schedule-intro {
@@ -311,14 +311,14 @@
 .schedule .hero-bomm {
     display: inline-block;
     font-size: 13px;
-    font-weight: 700px;
+    font-weight: 700;
     letter-spacing: 0.08;
     text-transform: uppercase;
     color: #193F8A;
     margin-bottom: 12px;
 }
 
-.shcedule-intro h2 {
+.schedule-intro h2 {
     font-size: 36px;
     font-weight: 700;
     color: #0D1B2A;
@@ -346,6 +346,12 @@
     border: 1px solid #E5E7EB;
     border-radius: 16px;
     padding: 32px 28px;
+    transition: 0.3s;
+}
+/* hover effect included  */
+.daycard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
 .daycard-header {
@@ -360,6 +366,13 @@
     color: #FFFFFF;
     transform: translateY(-12px);
     box-shadow: 0 20px 40px rgba(13, 27, 42, 0.25);
+}
+
+/* feature card hover effect  */
+
+.daycard-featured:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 25px 45px rgba(13, 27, 42, 0.35);
 }
 
 .daycard-featured .daycard-header {
@@ -503,7 +516,7 @@ timeline-item:last-child {
     color: #B91C1C;
 }
 
-.tag-light {
+.tag-Light {
     background: rgba(255, 255, 255, 0.12);
     color: #FFFFFF;
 }
@@ -515,6 +528,9 @@ timeline-item:last-child {
     }
     .daycard-featured{
         transform: none;
+    }
+    .daycard-featured:hover{
+        transform: translateY(-8px);
     }
 }
 
