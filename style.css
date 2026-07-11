@@ -274,18 +274,18 @@
 
 /* AI section design start */
 
-.shedule{
+.shedule {
     padding: 96px 24px;
-    background: #F8F9FB; 
+    background: #F8F9FB;
 }
 
-.schedule-intro{
+.schedule-intro {
     max-width: 640px;
     margin: 0 auto 64px;
     text-align: center;
 }
 
-.schedule .hero-bomm{
+.schedule .hero-bomm {
     display: inline-block;
     font-size: 13px;
     font-weight: 700;
@@ -297,7 +297,226 @@
 
 /* AI section design end */
 
+.schedule {
+    padding: 96px 24px;
+    background: #F9F9FB;
+}
 
+.schedule-intro {
+    max-width: 700px;
+    margin: 0 auto 64px;
+    text-align: center;
+}
+
+.schedule .hero-bomm {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700px;
+    letter-spacing: 0.08;
+    text-transform: uppercase;
+    color: #193F8A;
+    margin-bottom: 12px;
+}
+
+.shcedule-intro h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #0D1B2A;
+    margin: 0 0 12px;
+}
+
+.schedule-subtitle {
+    font-size: 16px;
+    color: #5B6472;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    max-width: 1180px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+.daycard {
+    background: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 16px;
+    padding: 32px 28px;
+}
+
+.daycard-header {
+    margin-bottom: 28px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(13, 27, 42, 0.08);
+}
+
+.daycard-featured {
+    background: #0D1B2A;
+    border-color: #0D1B2A;
+    color: #FFFFFF;
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(13, 27, 42, 0.25);
+}
+
+.daycard-featured .daycard-header {
+    border-bottom-color: rgba(255, 255, 255, 0.15);
+}
+
+.daycard-number {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #193F8A;
+}
+
+.daycard-featured .daycard-number {
+    color: #8FB8FF;
+}
+
+.daycard-header h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #0D1B2A;
+    margin: 8px 0 6px;
+}
+
+.daycard-featured .daycard-header h3 {
+    color: #FFFFFF;
+}
+
+.daycard-date {
+    font-size: 13px;
+    color: #5B6472;
+}
+
+.daycard-featured .daycard-date {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.timeline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    bottom: 6px;
+    width: 2px;
+    background: #E5E7EB;
+}
+
+.daycard-featured .timeline::before {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 24px;
+}
+
+timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: 3px solid #193F8A;
+}
+
+.daycard-featured .timeline-item::before {
+    border-color: #8FB8FF;
+    background: #0D1B2A;
+}
+
+.timeline-time {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    color: #193F8A;
+    margin-bottom: 4px;
+}
+
+.daycard-featured .timeline-time {
+    color: #8FB8FF;
+}
+
+.timeline-content h4 {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #0D1B2A;
+    margin: 4px 0 0;
+}
+
+.daycard-featured .timeline-content h4 {
+    color: #FFFFFF;
+}
+
+.tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 3px 10px;
+    border-radius: 999px;
+}
+
+
+.tag-aiml {
+    background: #EDE4FF;
+    color: #7C3AED;
+}
+
+.tag-cloud {
+    background: #E0F2FE;
+    color: #0369A1;
+}
+
+.tag-frontend {
+    background: #FEF3C7;
+    color: #B45309;
+}
+
+.tag-security {
+    background: #FEE2E2;
+    color: #B91C1C;
+}
+
+.tag-light {
+    background: rgba(255, 255, 255, 0.12);
+    color: #FFFFFF;
+}
+
+@media(max-width: 900px){
+    .schedule-grid{
+        .grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    .daycard-featured{
+        transform: none;
+    }
+}
 
 /* footer section design start  */
 
@@ -324,12 +543,14 @@ hr {
     margin: 30px 0;
 }
 
-.footer-bottom{
+.footer-bottom {
     text-align: center;
     padding-top: 30px;
 }
-.footer-bottom p{
+
+.footer-bottom p {
     font-size: 14px;
     color: white;
 }
+
 /* footer section design end */
