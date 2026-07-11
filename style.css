@@ -351,7 +351,7 @@
 /* hover effect included  */
 .daycard:hover {
     transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 15px 30px black;
 }
 
 .daycard-header {
@@ -363,6 +363,7 @@
 .daycard-featured {
     background: #0D1B2A;
     border-color: #0D1B2A;
+    border: 1px solid #E5E7EB;
     color: #FFFFFF;
     transform: translateY(-12px);
     box-shadow: 0 20px 40px rgba(13, 27, 42, 0.25);
@@ -372,7 +373,7 @@
 
 .daycard-featured:hover {
     transform: translateY(-20px);
-    box-shadow: 0 25px 45px rgba(13, 27, 42, 0.35);
+    box-shadow: 0 15px 30px black;
 }
 
 .daycard-featured .daycard-header {
