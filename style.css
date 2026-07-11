@@ -510,7 +510,7 @@ timeline-item:last-child {
 
 @media(max-width: 900px){
     .schedule-grid{
-        .grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
         gap: 24px;
     }
     .daycard-featured{
