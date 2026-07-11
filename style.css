@@ -516,9 +516,14 @@ timeline-item:last-child {
     color: #B91C1C;
 }
 
-.tag-Light {
+.tag-light {
     background: rgba(255, 255, 255, 0.12);
     color: #FFFFFF;
+}
+
+.daycard:not(.daycard-featured) .tag-light {
+    background: #E5E7EB;
+    color: #374151;
 }
 
 @media(max-width: 900px){
